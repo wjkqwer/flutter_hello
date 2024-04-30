@@ -1,0 +1,1 @@
+enum TodosOption { markAll, clearCompleted }
