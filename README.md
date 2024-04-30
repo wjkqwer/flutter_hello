@@ -1,16 +1,13 @@
-# flutter_todos
+# flutter_hello
 
-todos app
+```
+Image.network("")   //加载网络图片
 
-## Getting Started
+//两种处理列表数据方式
+children: _urls.map((url) => Image.network(url)).toList()
+children: List.generate(_urls.length, (index) => Image.network(_urls[index])))
 
-This project is a starting point for a Flutter application.
+SingleChildScrollView  //滚动组件,不支持懒加载
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Card //和安卓差不多
+```
