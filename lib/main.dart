@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_todos/screen/anonymous_route_screen.dart';
 import 'package:flutter_todos/screen/demo_all_screen.dart';
 import 'package:flutter_todos/screen/edit_todo_screen.dart';
+import 'package:flutter_todos/screen/other_test_screen.dart';
 import 'package:flutter_todos/screen/stats_screen.dart';
 import 'package:flutter_todos/screen/todos_screen.dart';
 
@@ -18,7 +19,10 @@ class MyApp extends StatelessWidget {
       routes: {
         AnonymousRouteScreen.routeName: (context) {
           return const AnonymousRouteScreen();
-        }
+        },
+        OtherTestScreen.routeName: (context) {
+          return const OtherTestScreen();
+        },
       },
       title: 'Flutter Demo',
       theme: ThemeData(
