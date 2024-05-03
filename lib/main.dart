@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_todos/screen/anonymous_route_screen.dart';
 import 'package:flutter_todos/screen/demo_all_screen.dart';
 import 'package:flutter_todos/screen/edit_todo_screen.dart';
+import 'package:flutter_todos/screen/listview_screen.dart';
 import 'package:flutter_todos/screen/other_test_screen.dart';
 import 'package:flutter_todos/screen/stats_screen.dart';
 import 'package:flutter_todos/screen/todos_screen.dart';
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
         },
         OtherTestScreen.routeName: (context) {
           return const OtherTestScreen();
+        },
+        ListviewScreen.routeName: (context) {
+          return const ListviewScreen();
         },
       },
       title: 'Flutter Demo',
