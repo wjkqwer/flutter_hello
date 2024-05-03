@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todos/screen/anonymous_route_screen.dart';
+import 'package:flutter_todos/screen/clip_screen.dart';
 import 'package:flutter_todos/screen/demo_all_screen.dart';
 import 'package:flutter_todos/screen/edit_todo_screen.dart';
 import 'package:flutter_todos/screen/listview_screen.dart';
@@ -26,6 +27,9 @@ class MyApp extends StatelessWidget {
         },
         ListviewScreen.routeName: (context) {
           return const ListviewScreen();
+        },
+        ClipScreen.routeName: (context) {
+          return const ClipScreen();
         },
       },
       title: 'Flutter Demo',

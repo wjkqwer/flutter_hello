@@ -3,6 +3,7 @@ import 'package:flutter_todos/screen/demo_scroll_screen.dart';
 import 'package:flutter_todos/screen/route_screen.dart';
 
 import 'anonymous_route_screen.dart';
+import 'clip_screen.dart';
 import 'listview_screen.dart';
 import 'other_test_screen.dart';
 
@@ -69,6 +70,12 @@ class _StatsScreenState extends State<DemoAllScreen> {
                   Navigator.pushNamed(context, ListviewScreen.routeName);
                 },
                 child: Text("Listview")),
+            const SizedBox(height: 15),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, ClipScreen.routeName);
+                },
+                child: Text("Clip")),
           ],
         ),
       ),
